@@ -21,6 +21,8 @@ def convert(num, sys):
         num //= sys
     return res[::-1]
 
+return res[::-1] if res else '0'
+
 print(convert(20, 2))
 
 
@@ -32,6 +34,8 @@ def convert(num, sys):
         res += printable[num % sys]
         num //= sys
     return res[::-1]
+
+return res[::-1] if res else '0'
 
 # полезные алгоритмы
 # сумма цифр двоичной системы
